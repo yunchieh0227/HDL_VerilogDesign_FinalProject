@@ -1,0 +1,261 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -5.511
+TNS   : -265.185
+
+Type  : Slow 1100mV 85C Model Setup 'ball_input[0]'
+Slack : -5.185
+TNS   : -43.822
+
+Type  : Slow 1100mV 85C Model Setup 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -2.365
+TNS   : -28.937
+
+Type  : Slow 1100mV 85C Model Setup 'counter:comb_5|round_reset'
+Slack : -0.981
+TNS   : -1.955
+
+Type  : Slow 1100mV 85C Model Hold 'counter:comb_5|round_reset'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'ball_input[0]'
+Slack : 0.585
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -2.652
+TNS   : -138.226
+
+Type  : Slow 1100mV 85C Model Recovery 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -1.894
+TNS   : -7.564
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ball_input[0]'
+Slack : -0.595
+TNS   : -11.288
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -80.024
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.538
+TNS   : -12.973
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter:comb_5|round_reset'
+Slack : -0.538
+TNS   : -1.748
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -5.585
+TNS   : -267.304
+
+Type  : Slow 1100mV 0C Model Setup 'ball_input[0]'
+Slack : -5.040
+TNS   : -42.257
+
+Type  : Slow 1100mV 0C Model Setup 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -2.514
+TNS   : -29.945
+
+Type  : Slow 1100mV 0C Model Setup 'counter:comb_5|round_reset'
+Slack : -0.871
+TNS   : -1.734
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'counter:comb_5|round_reset'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'ball_input[0]'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -2.307
+TNS   : -118.130
+
+Type  : Slow 1100mV 0C Model Recovery 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -1.887
+TNS   : -7.536
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : -0.223
+TNS   : -5.601
+
+Type  : Slow 1100mV 0C Model Removal 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ball_input[0]'
+Slack : -0.565
+TNS   : -10.965
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -82.854
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.538
+TNS   : -12.877
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter:comb_5|round_reset'
+Slack : -0.538
+TNS   : -1.641
+
+Type  : Fast 1100mV 85C Model Setup 'ball_input[0]'
+Slack : -2.975
+TNS   : -26.512
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.924
+TNS   : -89.788
+
+Type  : Fast 1100mV 85C Model Setup 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.979
+TNS   : -9.426
+
+Type  : Fast 1100mV 85C Model Setup 'counter:comb_5|round_reset'
+Slack : -0.137
+TNS   : -0.272
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -0.113
+TNS   : -0.325
+
+Type  : Fast 1100mV 85C Model Hold 'counter:comb_5|round_reset'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'ball_input[0]'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : -1.750
+TNS   : -91.789
+
+Type  : Fast 1100mV 85C Model Recovery 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -1.283
+TNS   : -5.128
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : -0.015
+TNS   : -0.257
+
+Type  : Fast 1100mV 85C Model Removal 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ball_input[0]'
+Slack : -0.495
+TNS   : -6.529
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.278
+TNS   : -9.456
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.055
+TNS   : -0.362
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter:comb_5|round_reset'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.625
+TNS   : -77.963
+
+Type  : Fast 1100mV 0C Model Setup 'ball_input[0]'
+Slack : -2.497
+TNS   : -22.203
+
+Type  : Fast 1100mV 0C Model Setup 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.835
+TNS   : -8.347
+
+Type  : Fast 1100mV 0C Model Setup 'counter:comb_5|round_reset'
+Slack : -0.069
+TNS   : -0.137
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -0.325
+TNS   : -1.665
+
+Type  : Fast 1100mV 0C Model Hold 'counter:comb_5|round_reset'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'ball_input[0]'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : -1.304
+TNS   : -66.326
+
+Type  : Fast 1100mV 0C Model Recovery 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -1.101
+TNS   : -4.402
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : -0.254
+TNS   : -10.384
+
+Type  : Fast 1100mV 0C Model Removal 'Freq_div_1Hz:comb_4|clk_div'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ball_input[0]'
+Slack : -0.445
+TNS   : -5.570
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.285
+TNS   : -9.730
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Freq_div_1Hz:comb_4|clk_div'
+Slack : -0.012
+TNS   : -0.063
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter:comb_5|round_reset'
+Slack : 0.141
+TNS   : 0.000
+
+------------------------------------------------------------

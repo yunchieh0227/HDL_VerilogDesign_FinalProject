@@ -1,0 +1,4 @@
+module initial_reset(total_reset, round_reset);
+// This module accepts the first total_reset input(switch or button), then change round_reset from 0 to 1
+
+endmodule
