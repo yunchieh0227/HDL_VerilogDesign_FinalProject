@@ -1,0 +1,70 @@
+module FINAL(clock,total_reset,ball_input,gp_input,dot_row,dot_col,countdown_out,score_out);
+
+input clock,total_reset;//total_reset是整個遊戲重置(含計分)
+input [3:0]ball_input;//1-6
+input [2:0]gp_input;//1-3
+output [7:0]dot_row;
+output [7:0]dot_col;
+output [7:0]countdown_out;
+output [7:0]score_out
+wire clock_div_10000Hz;
+wire clock_div_1Hz;
+wire clock_div_3Hz;
+
+wire [3:0]row_ball;
+wire [7:0]dot_col_ball;
+wire [3:0]row_gp;
+wire [7:0]dot_col_gp;
+
+wire [7:0]dot_col_win;
+wire start;
+wire [3:0]count;
+wire goal;
+reg [3:0]current_score;
+wire finish;
+reg reset;
+
+
+
+//這塊是給你們放除頻器的
+Freq_div_10000Hz(clock,reset,clock_div_10000Hz);//點矩陣同步//10000Hz
+Freq_div_1Hz(clock,reset,clock_div_1Hz);//1Hz
+Freq_div_3Hz(clock,reset,clock_div_3Hz);//3Hz
+//有要多塞的到時自己放進來
+
+
+//part a
+countdown(Freq_div_1Hz,reset,start,count);//倒數完後傳出start訊號
+//輸入  倒數的除頻，下一局?//輸出  開始?，倒數
+Seg7(count,countdown_out);//轉七段顯示
+
+
+
+//part b
+soccer_ball(clock_div_array,start,reset,ball_input,row_ball,dot_col_ball);
+//輸入  時間，開始?，下一局?，球位置輸入//輸出  球在第幾row，col的形式(00001000)?//start為1之後球才開始移動
+soccer_goalkeeper(clock_div_array,start,reset,gp_input,row_gp,dot_col_gp);
+//同上，最後一個輸出是輸出點矩陣的實際影像(00001000)讓下面的人可以直接把畫面疊起來//row_gp向上取 ex 23 都要亮 -> 輸出 2)
+
+
+
+
+//part c
+win_animation(clock_div_3Hz,clock_div_10000Hz,finish,dot_col_win);
+//輸入  跑馬燈除頻(動畫下一格)，點陣除頻，如果結束遊戲就開始撥放 //輸出  
+//跑馬燈  這個看要不要跟下面的顯示寫在一個檔案裡，應該會比較好寫，你們討論一下。
+dot_matrix(clock_div_10000Hz,row_ball,dot_col_ball,row_gp,dot_col_gp,finish,reset,dot_row,dot_col);
+//輸入     點陣clock，球的row，球的col，守門員的row，守門員的col，遊戲結束了嗎? //輸出 動畫跑完之後輸出reset重置小局，點矩陣的row，點矩陣的col
+
+
+
+
+//part a
+score(total_reset,goal,current_score,finish);
+//輸入 重置整把?，這把有進球嗎?//輸出當前成績，如果>=5分就結束遊戲
+Seg7(current_score,score_out);
+//轉七段
+
+
+
+endmodule 

@@ -1,0 +1,11 @@
+module switch_player(round_reset,current_player);
+input round_reset;
+output current_player;
+reg current_player;
+
+always@(negedge round_reset)
+begin
+    current_player<=current_player==0?1:0;
+end
+
+endmodule

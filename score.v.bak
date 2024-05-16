@@ -1,0 +1,38 @@
+module score(total_reset,goal,current_score1,current_score2,current_player,finish);
+output [3:0] current_score1;
+output [3:0] current_score2;
+input goal;
+
+output total_reset,finish,current_player;
+reg [3:0]current_score1;
+reg [3:0]current_score2;
+reg finish,total_reset,current_player;
+
+always@(posedge goal)
+begin
+    if(current_player==0)
+    begin
+        current_score1<=current_score1+1;
+        if(current_score1==5)
+        begin
+            finish<=1;
+            total_reset<=1;
+        end
+        else
+            finish<=finish;
+    end
+    else
+    begin
+        current_score2<=current_score2+1;
+        if(current_score2==5)
+        begin
+            finish<=2;
+            total_reset<=1;
+        end
+        else
+            finish<=finish;
+    end
+end
+
+
+endmodule

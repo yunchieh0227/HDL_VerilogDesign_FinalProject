@@ -1,0 +1,19 @@
+module counter(clock_div_1Hz,round_reset,current_time)
+
+input clock_div_1Hz,round_reset;
+output[6:0]current_time;
+
+
+
+always @(posedge clock_div_1Hz or negedge round_reset) begin
+    if(!round_reset)
+        current_time<=6'b000000;
+    else begin
+	 	if(current_time==6'd12)
+			current_time<=6'd0;
+		else
+        current_time<=current_time+6'd1;
+    end
+end
+
+endmodule 
